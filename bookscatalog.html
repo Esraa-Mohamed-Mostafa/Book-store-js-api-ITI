@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/bookscatalog.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Book Store</a></div>
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#content">Book Store</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Contact</a></li>
+        <div id="shopping-cart" style="padding: 0.5rem" ;>
+          <span class="counter"></span>
+          <i class="fa-solid fa-cart-shopping fa-xl" style="margin-right: 15px; color: white;padding: 0.5rem;"></i>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <header id="Home">
+      <div class="searchField ">
+        <input type="search" class="input" placeholder="What are you looking for?" onkeyup="searchFunc(this.value)">
+      </div>
+    </header>
+
+
+    <section id="content">
+      <div class="container">
+        <div class="main">
+        </div>
+        <div class="bookviewDetails"> </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="button">
+      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+
+
+    <footer>
+      <div class="footer__header">
+        <div class="footer__contact">
+          <div class="footer__item"><i class="fa-solid fa-location-dot"></i>
+            <p>21 Revolution street Alexandria, Egypt</p>
+          </div>
+          <div class="footer__item"><i class="fa-solid fa-envelope"></i>
+            <p>support@company.com</p>
+          </div>
+          <div class="footer__item"><i class="fa-solid fa-phone"></i>
+            <p>+1 555555555</p>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h4>
+            About This Company
+          </h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae repudiandae culpa magni aliquam
+            voluptates odit qui odio voluptas placeat.
+            Itaque vero architecto placeat quo magnam saepe dignissimos soluta voluptatibus.</p>
+
+          <div class="my-5">
+            <div class="">
+              <ul class=" social__media">
+                <li>
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+    </footer>
+
+  </main>
+  <script src="./js/bookscatalog.js"></script>
+</body>
+
+</html>
